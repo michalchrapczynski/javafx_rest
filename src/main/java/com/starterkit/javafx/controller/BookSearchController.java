@@ -113,6 +113,9 @@ public class BookSearchController {
 
 		titleColumn.setCellValueFactory(cellData -> new ReadOnlyStringWrapper(cellData.getValue().getTitle()));
 
+		/*
+		 * REV: czy napewno ma by wyswietlany tylko pierwszy autor
+		 */
 		firstNameColumn.setCellValueFactory(
 				cellData -> new ReadOnlyStringWrapper(cellData.getValue().getAuthors().get(0).getFirstName()));
 
@@ -147,6 +150,9 @@ public class BookSearchController {
 		searchButtonActionVersion3();
 	}
 
+	/*
+	 * REV: ta metoda nie jest uzywana
+	 */
 	/**
 	 * <b>This implementation is INCORRECT!<b>
 	 * <p>
@@ -174,6 +180,9 @@ public class BookSearchController {
 		resultTable.getSortOrder().clear();
 	}
 
+	/*
+	 * REV: ta metoda nie jest uzywana
+	 */
 	/**
 	 * This implementation is correct.
 	 * <p>
